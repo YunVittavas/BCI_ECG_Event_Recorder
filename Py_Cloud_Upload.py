@@ -4,15 +4,15 @@ import requests
 
 ''' Variables: Initial Authorization '''
 
-client_id :str = '4vouvmuus59a0imasgo8rcu4b1'
-auth_data :dict = {'USERNAME':'testbci01', 'PASSWORD':'12345678'}
-region_name :str = 'ap-southeast-1'
+client_id :str = ''
+auth_data :dict = {'USERNAME':'', 'PASSWORD':''}
+region_name :str = ''
 
 ''' Variables: Get Url Token '''
 
 filename = 'pytest02.txt'
 filetag = 'pytest_upload02'
-req_url = f'https://83mcanxyj6.execute-api.ap-southeast-1.amazonaws.com/prod-pracha/files/upload-endpoint?fileName={filename}&fileTag={filetag}'
+req_url = f''
 
 def initAuth(ClientId, AuthParameters, region_name):
 	provider_client = client('cognito-idp', region_name=region_name)

@@ -183,14 +183,14 @@ if __name__ == '__main__':
 	path = 
 	
 	pytest = ER_CloudUpload()
-	pytest.clientID = '4vouvmuus59a0imasgo8rcu4b1'
-	pytest.authData = {'USERNAME':'testbci01', 
-						'PASSWORD':'12345678'}
+	pytest.clientID = ''
+	pytest.authData = {'USERNAME':'', 
+						'PASSWORD':''}
 	pytest.regionName = 'ap-southeast-1'
 	
 	pytest.fileName = 'ER_CloudUpload_Test.txt'
 	pytest.fileTag = 'ER_Test01'
-	pytest.reqURL = f'https://83mcanxyj6.execute-api.ap-southeast-1.amazonaws.com/prod-pracha/files/upload-endpoint?fileName={pytest.__fileName}&fileTag={self.__fileTag}'
+	pytest.reqURL = f''
 	
 	pytest.initAuth(pytest.clientID, pytest.authData, pytest.regionName)
 	pytest.getURL(pytest.response, pytest.reqURL)
